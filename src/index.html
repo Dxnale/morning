@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reloj Digital Personalizable</title>
+</head>
+
+<body>
+    <div class="clock">
+        <div id="time">Obteniendo hora...</div>
+    </div>
+
+
+    <footer>
+        <div class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <div class="menu-content">
+                <div class="controls">
+                    <label class="checkbox-label" for="showSeconds">Mostrar Segundos:</label>
+                    <input type="checkbox" id="showSeconds">
+                    <br>
+                    <label class="checkbox-label" for="format12hr">Formato 12 Horas:</label>
+                    <input type="checkbox" id="format12hr" checked>
+                </div>
+                <br>
+                <label class="checkbox-label" for="darkMode">Modo Oscuro:</label>
+                <input type="checkbox" id="darkMode" checked>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
