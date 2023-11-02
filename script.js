@@ -18,7 +18,7 @@ document.getElementById('darkMode').addEventListener('change', toggleDarkMode);
 
 function fetchTimeFromAPI() {
   // URL de la API de WorldTimeAPI para obtener la hora actual basada en tu IP.
-  const apiUrl = 'http://worldtimeapi.org/api/ip';
+  const apiUrl = 'https://worldtimeapi.org/api/ip';
 
   fetch(apiUrl)
     .then((response) => response.json())
