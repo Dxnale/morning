@@ -10,7 +10,6 @@ function toggleDarkMode() {
     body.classList.add('light'); // Aplica el estilo del modo claro.
   }
 }
-
 // Llama a la función para aplicar el estilo de modo oscuro cuando se carga la página.
 toggleDarkMode();
 
@@ -43,7 +42,6 @@ function fetchTimeFromAPI() {
 
       let formattedTime = currentTime.toLocaleTimeString([], options);
 
-      // Si el formato de 12 horas está habilitado, elimina las letras "a.m." y "p.m.".
       if (format12hr) {
         formattedTime = formattedTime.toUpperCase().replace(/\s/g, '').replace(/A.M./g, '').replace(/P.M./g, '');
       }
@@ -58,5 +56,3 @@ function fetchTimeFromAPI() {
 // Actualiza la hora cada segundo.
 setInterval(fetchTimeFromAPI, 1000);
 
-// Llama a la función para obtener la hora cuando se carga la página.
-fetchTimeFromAPI();
